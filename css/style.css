@@ -189,14 +189,14 @@
 				margin: 0 0 2em 0;
 			}
 
-				.image.centered img {
-					margin: 0 auto;
-					width: auto;
+			.image.centered img {
+				margin: 0 auto;
+				width: auto;
 			}
 			
-				.row.flush > * {
-						padding: 10px;
-				}
+			.row + .row.flush > * {
+    				padding: 10px;
+			}
 
 			
 	/* List */
