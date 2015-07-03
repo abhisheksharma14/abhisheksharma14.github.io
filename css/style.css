@@ -194,7 +194,7 @@
 					width: auto;
 			}
 			
-				.row.flush>* {
+				.row.flush > * {
 						padding: 10px;
 				}
 
