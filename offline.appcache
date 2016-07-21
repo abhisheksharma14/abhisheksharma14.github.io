@@ -1,0 +1,44 @@
+CACHE MANIFEST
+#2016-07-21 v1.0
+
+CACHE:
+#CSS files
+./css/skel.css
+./css/style.css
+./css/style-wide.css
+./css/style-normal.css
+
+
+#Fonts
+https://fonts.googleapis.com/icon?family=Material+Icons
+./fonts/glyphicons-halflings-regular.ttf
+./fonts/fonts/fontawesome-webfont.woff2?v=4.5.0
+./fonts/glyphicons-halflings-regular.woff
+./fonts/glyphicons-halflings-regular.ttf
+
+#JS files
+./js/jquery.min.js
+./js/jquery.poptrox.min.js
+./js/jquery.scrolly.min.js
+./js/jquery.scrollgress.min.js
+./js/skel.min.js
+./js/init.js
+
+
+#Media
+./images/fulls/01.png
+./images/fulls/02.png
+./images/fulls/03.png
+./images/fulls/04.png
+./images/fulls/05.png
+./images/fulls/06.png
+./images/thumbs/01.png
+./images/thumbs/02.png
+./images/thumbs/03.png
+./images/thumbs/04.png
+./images/thumbs/05.png
+./images/thumbs/06.png
+
+
+NETWORK:
+*
