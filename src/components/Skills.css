@@ -1,0 +1,144 @@
+.skills {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background: #112240;
+}
+
+.skills-section,
+.certifications-section,
+.education-section {
+  margin-bottom: 4rem;
+}
+
+.subsection-title {
+  color: #ccd6f6;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.subsection-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #64ffda;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background: rgba(10, 25, 47, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: #64ffda;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.category-title {
+  color: #64ffda;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(100, 255, 218, 0.1);
+  color: #ccd6f6;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+  background: rgba(100, 255, 218, 0.2);
+  border-color: #64ffda;
+  transform: scale(1.05);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: rgba(10, 25, 47, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  border-color: #64ffda;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cert-provider {
+  color: #64ffda;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-name {
+  color: #8892b0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.education-card {
+  background: rgba(10, 25, 47, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  max-width: 600px;
+}
+
+.degree {
+  color: #ccd6f6;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.university {
+  color: #64ffda;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.period {
+  color: #8892b0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .skills-grid,
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,120 @@
+.experience {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background: #112240;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #64ffda;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #64ffda;
+  border-radius: 50%;
+  border: 3px solid #112240;
+  box-shadow: 0 0 0 3px #64ffda;
+}
+
+.timeline-content {
+  background: rgba(17, 34, 64, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(5px);
+  border-color: #64ffda;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.job-title {
+  color: #ccd6f6;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  color: #64ffda;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.location {
+  color: #8892b0;
+  font-size: 1rem;
+}
+
+.period {
+  color: #8892b0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+}
+
+.responsibilities li {
+  color: #8892b0;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.responsibilities li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-dot {
+    left: -1.9rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .company-info {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
